@@ -7,11 +7,12 @@ public class Cd {
             try {
 		ApplicationContext context = new AnnotationConfigApplicationContext(Appconfig.class);
 		JefeEmpleados jefebean = (JefeEmpleados) context.getBean("Jefe", JefeEmpleados.class);
+                jefebean.setNombre("Pedro ");
 		SecretariaEmpleados secrbean = (SecretariaEmpleados) context.getBean("Secretaria", SecretariaEmpleados.class);
 		IntendenteEmpleados intbean = (IntendenteEmpleados) context.getBean("Intendente", IntendenteEmpleados.class);
 		DirectorEmpleados dirbean = (DirectorEmpleados) context.getBean("Director", DirectorEmpleados.class);
 		ProfesorEmpleados profbean = (ProfesorEmpleados) context.getBean("Profesor", ProfesorEmpleados.class);
-		System.out.println(jefebean.getTarea());
+		System.out.println(jefebean.getNombre()+jefebean.getTarea());
 		System.out.println(secrbean.getTarea());
 		System.out.println(intbean.getTarea());
 		System.out.println(dirbean.getTarea());
