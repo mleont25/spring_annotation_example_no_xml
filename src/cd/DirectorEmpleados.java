@@ -10,11 +10,19 @@ package cd;
  * @author Posgrado-3
  */
 public class DirectorEmpleados{
-        
+            String nombre;
     public DirectorEmpleados() {
     }
 
     public String getTarea(){
         return "Soy director y tengo la tarea de adminisntrar los recursos de la empresa";
+    }
+    
+        public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 }

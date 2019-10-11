@@ -10,11 +10,19 @@ package cd;
  * @author Posgrado-3
  */
 public class SecretariaEmpleados {
-    
+        String nombre;
     public SecretariaEmpleados() {
     }
 
     public String getTarea(){
         return "Soy secretaria y tengo la tarea de adminisntrar las agenda de los jefes";
+    }
+    
+        public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 }

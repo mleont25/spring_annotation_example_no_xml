@@ -10,7 +10,17 @@ package cd;
  * @author Posgrado-3
  */
 public class ProfesorEmpleados {
+        String nombre;
     public String getTarea(){
         return "Soy profesor y tengo la tarea de profesar";
     }
+    
+        public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    
 }

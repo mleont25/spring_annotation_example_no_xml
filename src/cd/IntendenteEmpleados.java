@@ -10,7 +10,16 @@ package cd;
  * @author Posgrado-3
  */
 public class IntendenteEmpleados {
+        String nombre;
         public String getTarea(){
         return "Soy Intendente y tengo la tarea de limpiar";
+    }
+        
+            public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 }
